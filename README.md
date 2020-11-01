@@ -21,7 +21,12 @@ esbuild
     entryPoints: ["index.js"],
     bundle: true,
     outfile: "dist/bundle.js",
-    plugins: [elmLoader],
+    plugins: [
+      elmLoader({
+        debug: true,
+        optimize: false,
+      }),
+    ],
     logLevel: "info",
   })
   .catch(() => process.exit(1));

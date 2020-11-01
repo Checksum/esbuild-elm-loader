@@ -1,6 +1,6 @@
 const { compileToString } = require("node-elm-compiler");
 
-module.exports = {
+module.exports = (options = {}) => ({
   name: "elm-loader",
   setup(build) {
     build.onResolve({ filter: /\.elm$/ }, (args) => ({
@@ -9,10 +9,10 @@ module.exports = {
     }));
 
     build.onLoad({ filter: /.*/, namespace: "elm" }, (args) =>
-      compileToString([args.path], {}).then((output) => ({
+      compileToString([args.path], options).then((output) => ({
         contents: output,
         loader: "js",
       }))
     );
   },
-};
+});
