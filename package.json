@@ -1,0 +1,33 @@
+{
+  "name": "esbuild-elm-loader",
+  "version": "0.1.0",
+  "description": "Elm loader for esbuild",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "node-elm-compiler": "^5.0.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.1"
+  },
+  "peerDependencies": {
+    "esbuild": ">=0.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/checksum/esbuild-elm-loader.git"
+  },
+  "keywords": [
+    "esbuild",
+    "elm",
+    "file-loader"
+  ],
+  "author": "Srinath Sankar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/checksum/esbuild-elm-loader/issues"
+  },
+  "homepage": "https://github.com/checksum/esbuild-elm-loader#readme"
+}
