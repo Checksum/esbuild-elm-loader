@@ -5,7 +5,7 @@ An [Elm](https://elm-lang.org) file loader for [esbuild](https://esbuild.github.
 ## Installation
 
 ```
-yarn add --dev esbuild-elm-loader
+yarn add --dev https://github.com/Checksum/esbuild-elm-loader esbuild@0.8.1
 ```
 
 ## Usage
