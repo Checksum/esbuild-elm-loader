@@ -1,13 +1,14 @@
 {
   "name": "esbuild-elm-loader",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Elm loader for esbuild",
   "main": "index.js",
   "engines": {
     "node": ">=10"
   },
   "dependencies": {
-    "node-elm-compiler": "^5.0.4"
+    "node-elm-compiler": "^5.0.4",
+    "terser": "^5.3.3"
   },
   "devDependencies": {
     "esbuild": "^0.8.1"

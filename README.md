@@ -5,7 +5,7 @@ An [Elm](https://elm-lang.org) file loader for [esbuild](https://esbuild.github.
 ## Installation
 
 ```
-yarn add --dev https://github.com/Checksum/esbuild-elm-loader esbuild@0.8.1
+yarn add --dev https://github.com/Checksum/esbuild-elm-loader esbuild@0.8.7
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ The esbuild [plugin API](https://github.com/evanw/esbuild/issues/111) isn't supp
 
 ```js
 const esbuild = require("esbuild");
-const elmLoader = require("..");
+const elmLoader = require("esbuild-elm-loader");
 
 const prodBuild = process.env.NODE_ENV === "production";
 
@@ -29,25 +29,6 @@ esbuild
         debug: !prodBuild,
         optimize: prodBuild,
       }),
-    ],
-    // Elm pure functions (https://gist.github.com/evancz/fc6ff4995395a1643155593a182e2de7)
-    pure: [
-      "F2",
-      "F3",
-      "F4",
-      "F5",
-      "F6",
-      "F7",
-      "F8",
-      "F9",
-      "A2",
-      "A3",
-      "A4",
-      "A5",
-      "A6",
-      "A7",
-      "A8",
-      "A9",
     ],
     logLevel: "info",
   })
